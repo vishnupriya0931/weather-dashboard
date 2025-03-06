@@ -45,7 +45,7 @@ async function fetchWeather(city) {
 function displayWeather(data){
     const currentcondition = data.current_condition[0];
     cityname.textContent = data.nearest_area[0].areaName[0].value;
-    temperature.textContent =`Temperature :${currentcondition.tem_C}°c`;
+    temperature.textContent =`Temperature :${currentcondition.temp_C}°c`;
     weather.textContent = `Weather : ${currentcondition.weatherDesc[0].value}`;
     humidity.textContent = `Humidity : ${currentcondition.humidity}%`;
     wind.textContent = `Wind Speed : ${currentcondition.windspeedKmph} km/h`;
